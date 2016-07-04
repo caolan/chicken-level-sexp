@@ -1,0 +1,5 @@
+/*.so
+/*.o
+/*.c
+/level-sexp.import.scm
+/testdb

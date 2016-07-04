@@ -1,0 +1,6 @@
+((synopsis "Automatically read and write s-expressions to a level implementation")
+ (author "Caolan McMahon")
+ (category db)
+ (license "BSD")
+ (needs level interfaces lazy-seq)
+ (test-depends test leveldb))

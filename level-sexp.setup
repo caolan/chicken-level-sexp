@@ -1,0 +1,9 @@
+(compile -O2 -d1 -s "level-sexp.scm" -Iinclude -j "level-sexp")
+(compile -O2 -d0 -s "level-sexp.import.scm")
+(compile -O2 -d1 -c "level-sexp.scm" -Iinclude -unit "level-sexp" -o "level-sexp-static.o")
+
+(install-extension
+  'level-sexp
+  '("level-sexp.so" "level-sexp.import.so" "level-sexp-static.o")
+  '((version "3.0.0")
+    (static "level-sexp-static.o")))
