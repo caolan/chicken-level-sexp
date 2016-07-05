@@ -8,6 +8,6 @@ Read and write s-expressions to a level implementation.
 (define db
   (level-sexp (open-db "testdb")))
 
-(db-put "key" '((name . "test")))
-(db-get "key") ;; => ((name . "test"))
+(db-put db "key" '((name . "test")))
+(db-get db "key") ;; => ((name . "test"))
 ```
